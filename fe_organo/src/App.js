@@ -5,6 +5,44 @@ import Team from './components/Team';
 
 function App() {
 
+  const teams = [
+    {
+      name: 'Programming',
+      colorPrimary: '#57C278',
+      colorSecundary: '#D9F7E9',
+    },
+    {
+      name: 'Front-End',
+      colorPrimary: '#82CFFA',
+      colorSecundary: '#E8F8FF',
+    },
+    {
+      name: 'Data Science',
+      colorPrimary: '#A6D157',
+      colorSecundary: '#F0F8E2',
+    },
+    {
+      name: 'DevOPS',
+      colorPrimary: '#E06B69',
+      colorSecundary: '#FDE7E8',
+    },
+    {
+      name: 'UX and UI',
+      colorPrimary: '#DB6EBF',
+      colorSecundary: '#FAE9F5',
+    },
+    {
+      name: 'Mobile',
+      colorPrimary: '#FFBA05',
+      colorSecundary: '#FFF5D9',
+    },
+    {
+      name: 'Inovation and Management',
+      colorPrimary: '#FF8A29',
+      colorSecundary: '#FFEEDF',
+    }
+  ]
+
   const [collaborators, setCollaborators] = useState([])
 
   const theNewCollaboratorAdd = (collaborator) => {
@@ -15,10 +53,10 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Forms theCollaboratorRegistration={collaborator => theNewCollaboratorAdd(collaborator)} />
-      <Team name="Front-End" />
-      <Team name="Data Science" />
-      <Team name="DevOPS" />
+      <Forms nameTeams={teams.map(team => team.name)} theCollaboratorRegistration={collaborator => theNewCollaboratorAdd(collaborator)} />
+
+      {teams.map(team => <Team key={team.name} name={team.name} colorPrimary={team.colorPrimary} colorSecundary={team.colorSecundary} />)}
+
     </div>
   );
 }
