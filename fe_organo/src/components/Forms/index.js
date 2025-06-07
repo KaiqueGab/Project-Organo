@@ -19,6 +19,10 @@ const Forms = (props) => {
             image,
             team
         })
+        setName('')
+        setPosition('')
+        setImage('')
+        setTeam('')
     }
 
     return ( //onSubmit: checks if the button was clicked and executed the function

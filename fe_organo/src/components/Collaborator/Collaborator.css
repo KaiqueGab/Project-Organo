@@ -2,8 +2,8 @@
     width: 280px;
 }
 
-.collaborador .header {
-    background-color: #ce6969;
+.head {
+    background-color: #FFFFFF;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -14,7 +14,7 @@
     bottom: -50px;
 }
 
-.collaborator .footer {
+.collaborator .foot {
     background: #FFFFFF;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 10px 10px;
@@ -22,7 +22,7 @@
     padding-bottom: 15px;
 }
 
-.collaborator .footer h4 {
+.collaborator .foot h4 {
     color: #6278F7;
     font-size: 18px;
     line-height: 20px;
@@ -30,7 +30,7 @@
     margin-bottom: 8px;
 }
 
-.collaborator .footer h5 {
+.collaborator .foot h5 {
     font-size: 18px;
     line-height: 20px;
     color: #212121;
