@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Banner from './components/Banner';
 import Forms from './components/Forms';
 import Team from './components/Team';
-import Footer from './Footer';
+import Footer from './components/Footer';
 
 function App() {
 
